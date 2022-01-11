@@ -19,15 +19,15 @@ elSurveyForm.addEventListener("submit", function (evt) {
     return;
   }
   if (secondNumber ==="USD") {
-    secondNumber = Math.floor(firstNumber*USD_to_SOUM);
+    secondNumber = firstNumber*USD_to_SOUM;
   }
 
   if (secondNumber == "EURO") {
-    secondNumber = Math.floor(firstNumber*EURO_to_SOUM);
+    secondNumber = firstNumber*EURO_to_SOUM;
   }
 
   if (secondNumber == "RUBL") {
-    secondNumber =Math.floor(firstNumber*RUBL_to_SOUM) ;
+    secondNumber =firstNumber*RUBL_to_SOUM;
   }
 
   var resultNumber = " Your budjet will stand "+ secondNumber + " SOUM";
